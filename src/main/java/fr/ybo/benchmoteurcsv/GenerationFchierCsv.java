@@ -16,6 +16,7 @@ public class GenerationFchierCsv {
 			'8', '9', '0' };
 
 	private String separateur = ",";
+
 	/**
 	 * ~10 000 000 de lignes ~200 caractères par ligne ~20 champs (4/5 gros
 	 * autour de 30 car.)
@@ -165,5 +166,17 @@ public class GenerationFchierCsv {
 		System.out.println("Génération en " + elapsedTime + "ms");
 
 		writer.close();
+
+		/**
+		 * Résultat obtenu : <br/>
+		 * Statistiques sur la taille des lignes :
+		 * <ul>
+		 * <li>Min : 215</li>
+		 * <li>Max : 227</li>
+		 * <li>Moyenne : 225.6665964</li>
+		 * </ul>
+		 * Taille du fichier : 2266666035 <br/>
+		 * Génération en 70576ms
+		 */
 	}
 }
